@@ -3,7 +3,7 @@ import PhoneScreen from "../../components/phone_screen/PhoneScreen";
 
 const PhoneScreenPage = () => {
   return (
-    <div>
+    <div style={{ marginTop: 50 }}>
       <PhoneScreen />
     </div>
   );

@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     transform: "scale(0.8)",
   },
   video: {
-    height: "380px",
+    height: "400px",
     width: "200px",
   },
 });

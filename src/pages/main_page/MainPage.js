@@ -107,17 +107,29 @@ function MainPage(props) {
           #MusicMovement
         </Typography>
       </div>
-      <Grid item xs={12}>
+      <Grid item xs={12} style={{ marginTop: 10 }}>
         <Grid container justify="center" spacing={2}>
           {sectionOfVideos.map((value) => (
-            <Grid key={value} item>
+            <Grid key={value} item className="VideoToHide ">
               <Video video={value} />
             </Grid>
           ))}
+          <div className="mobileVideoGrid">
+            <video
+              height="500"
+              className={"mobileVideo"}
+              loop
+              autoPlay
+              muted
+              key={video1}
+            >
+              <source src={video1} type="video/mp4" />
+            </video>
+          </div>
         </Grid>
       </Grid>
 
-      <Grid container spacing={3} className={classes.logosRoot}>
+      {/* <Grid container spacing={3} className={classes.logosRoot}>
         <Grid item xs>
           <SvgIcon
             component={ItunesLogo}
@@ -158,7 +170,7 @@ function MainPage(props) {
             </Box>
           </Box>
         </Grid>
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 }

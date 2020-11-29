@@ -82,7 +82,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-family: "Sacramento", cursive;
 }
-.mobileVideo {
+.mobileVideoGrid {
   visibility: hidden;
   display: none;
 }
@@ -91,13 +91,20 @@ body {
   .VideoToHide {
     display: none;
   }
-  .mobileVideo {
+  .mobileVideoGrid {
     width: 100%;
     visibility: visible;
     display: block;
     margin: 0 auto;
     text-align: center;
     border: 10px outset #ddd;
+    object-fit: cover;
+
+    height: 100%;
+  }
+  .mobileVideo {
+    height: "500";
+    width: "50vw";
   }
   .footer {
     display: flex;
