@@ -7,6 +7,10 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
 import ShootingVideoIcon from "../../assets/images/video-camera.svg";
+import VerifiedIcon from "../../assets/images/check.svg";
+import VideoSharingIcon from "../../assets/images/video-sharing.svg";
+import SearchIcon from "../../assets/images/search.svg";
+
 const useStyles = makeStyles({
   phoneContainer: {
     width: "600px" /* Adjust TV image width */,
@@ -91,7 +95,7 @@ const PhoneScreen = () => {
           <br />
           <Grid>
             <img
-              src={ShootingVideoIcon}
+              src={VideoSharingIcon}
               alt="Camera"
               style={{
                 width: 100,
@@ -101,7 +105,7 @@ const PhoneScreen = () => {
                 justifyContent: "center",
               }}
             />
-            <Typography>Make your own music videos</Typography>
+            <Typography>Explore new music content</Typography>
           </Grid>
         </Grid>
         <Grid item xs={6} md={3} justify="center">
@@ -121,7 +125,7 @@ const PhoneScreen = () => {
         <Grid item xs={6} md={2}>
           <Grid>
             <img
-              src={ShootingVideoIcon}
+              src={SearchIcon}
               alt="Camera"
               style={{
                 width: 100,
@@ -131,7 +135,7 @@ const PhoneScreen = () => {
                 justifyContent: "center",
               }}
             />
-            <Typography>Make your own music videos</Typography>
+            <Typography>Choose from 60 Million songs</Typography>
           </Grid>{" "}
           <br />
           <br />
@@ -145,7 +149,7 @@ const PhoneScreen = () => {
           <br />
           <Grid>
             <img
-              src={ShootingVideoIcon}
+              src={VerifiedIcon}
               alt="Camera"
               style={{
                 width: 100,
@@ -155,7 +159,7 @@ const PhoneScreen = () => {
                 justifyContent: "center",
               }}
             />
-            <Typography>Make your own music videos</Typography>
+            <Typography>Follow Verified Influencers</Typography>
           </Grid>
         </Grid>
       </Grid>

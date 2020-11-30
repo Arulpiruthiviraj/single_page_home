@@ -10,6 +10,9 @@ import { ReactComponent as GooglePlayLogo } from "../../assets/images/google-pla
 import { ReactComponent as AppStoreLogo } from "../../assets/images/app-store-badge.svg";
 import SvgIcon from "@material-ui/core/Icon";
 import Link from "@material-ui/core/Link";
+import ShareSocialMediaImage from "../../assets/images/social-media (1).svg";
+import ReferFriendImage from "../../assets/images/megaphone.svg";
+import RankImage from "../../assets/images/ranking.svg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -84,11 +87,10 @@ export default function Explanation() {
               }}
             />
             <Typography variant="h5" component="h5">
-              Music
+              Video
             </Typography>
             <Typography>
-              Select your music from Muqo's library or upload a song from your
-              Phone
+              Record multiple clips or upload and edit your video
             </Typography>
           </Grid>{" "}
           {/* </Paper> */}
@@ -108,24 +110,23 @@ export default function Explanation() {
               }}
             />
             <Typography variant="h5" component="h5">
-              Music
+              Post
             </Typography>
             <Typography>
-              Select your music from Muqo's library or upload a song from your
-              Phone
+              Share your Muqo's Video and get discovered on our trending page
             </Typography>
           </Grid>{" "}
           {/* </Paper> */}
         </Grid>
-        <Grid container justify="center" xs={12}>
+        <Grid container justify="center" xs={12} style={{ padding: 3 }}>
           {/* <Paper className={classes.paper} variant="outlined" elevation={0}> */}
           <Grid item xs={2}>
             <img
-              src={RecordMulpleClipsImage}
+              src={ShareSocialMediaImage}
               alt="Camera"
               style={{
                 width: 100,
-                height: 100,
+                height: "auto",
               }}
             />
           </Grid>
@@ -137,11 +138,11 @@ export default function Explanation() {
           </Grid>
           {/* </Paper> */}
         </Grid>
-        <Grid container justify="center" xs={12}>
+        <Grid container justify="center" xs={12} style={{ padding: 3 }}>
           {/* <Paper className={classes.paper} variant="outlined" elevation={0}> */}
           <Grid item xs={2}>
             <img
-              src={RecordMulpleClipsImage}
+              src={ReferFriendImage}
               alt="Camera"
               style={{
                 width: 100,
@@ -151,17 +152,16 @@ export default function Explanation() {
           </Grid>
           <Grid item xs={4}>
             <Typography variant="h5" component="h5">
-              SHARE Muqo videos to your social media and save videos to your
-              phone.
+              REFER friends, gain rewards and receive virtual concert tickets!
             </Typography>
           </Grid>
           {/* </Paper> */}
         </Grid>{" "}
-        <Grid container justify="center" xs={12}>
+        <Grid container justify="center" xs={12} style={{ padding: 3 }}>
           {/* <Paper className={classes.paper} variant="outlined" elevation={0}> */}
           <Grid item xs={2}>
             <img
-              src={RecordMulpleClipsImage}
+              src={RankImage}
               alt="Camera"
               style={{
                 width: 100,
@@ -171,8 +171,7 @@ export default function Explanation() {
           </Grid>
           <Grid item xs={4}>
             <Typography variant="h5" component="h5">
-              SHARE Muqo videos to your social media and save videos to your
-              phone.
+              RANK the top 100 musicians, songs and influencers.
             </Typography>
           </Grid>
           {/* </Paper> */}
