@@ -86,6 +86,14 @@ body {
   visibility: hidden;
   display: none;
 }
+.phoneViewLeftExplanation_m {
+  visibility: hidden;
+  display: none;
+}
+.phoneViewLeftExplanation_p {
+  visibility: visible;
+  display: block;
+}
 
 @media (max-width: 600px) {
   .VideoToHide {
@@ -109,5 +117,14 @@ body {
   .footer {
     display: flex;
     flex-direction: row;
+  }
+  .phoneViewLeftExplanation_m {
+    visibility: visible;
+    display: block;
+  }
+  .phoneViewLeftExplanation_p {
+    visibility: hidden;
+    display: none;
+    max-height: 0;
   }
 }

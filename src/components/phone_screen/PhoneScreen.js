@@ -67,8 +67,23 @@ const PhoneScreen = () => {
       >
         Create, Explore and Share Music Videos
       </Typography>
-      <Grid id="top-row" container spacing={24} md={12} justify="center">
-        <Grid item xs={6} md={2}>
+      <Grid
+        id="top-row"
+        container
+        spacing={24}
+        md={12}
+        xs={12}
+        justify="center"
+      >
+        <Grid
+          item
+          xs={6}
+          md={2}
+          container
+          direction="column"
+          justify="space-around"
+          alignItems="center"
+        >
           <Grid>
             <img
               src={ShootingVideoIcon}
@@ -83,16 +98,6 @@ const PhoneScreen = () => {
             />
             <Typography>Make your own music videos</Typography>
           </Grid>{" "}
-          <br />
-          <br />
-          <br /> <br />
-          <br />
-          <br /> <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
           <Grid>
             <img
               src={VideoSharingIcon}
@@ -107,6 +112,36 @@ const PhoneScreen = () => {
             />
             <Typography>Explore new music content</Typography>
           </Grid>
+          <div className="phoneViewLeftExplanation_m">
+            <Grid>
+              <img
+                src={SearchIcon}
+                alt="Camera"
+                style={{
+                  width: 100,
+                  height: 100,
+                  alignItems: "center",
+                  textAlign: "center",
+                  justifyContent: "center",
+                }}
+              />
+              <Typography>Choose from 60 Million songs</Typography>
+            </Grid>{" "}
+            <Grid>
+              <img
+                src={VerifiedIcon}
+                alt="Camera"
+                style={{
+                  width: 100,
+                  height: 100,
+                  alignItems: "center",
+                  textAlign: "center",
+                  justifyContent: "center",
+                }}
+              />
+              <Typography>Follow Verified Influencers</Typography>
+            </Grid>
+          </div>
         </Grid>
         <Grid item xs={6} md={3} justify="center">
           <div id="tv_container">
@@ -122,7 +157,16 @@ const PhoneScreen = () => {
             </video>
           </div>
         </Grid>
-        <Grid item xs={6} md={2}>
+        <Grid
+          item
+          xs={6}
+          md={2}
+          container
+          direction="column"
+          justify="space-around"
+          alignItems="center"
+          className="phoneViewLeftExplanation_p"
+        >
           <Grid>
             <img
               src={SearchIcon}
@@ -137,16 +181,6 @@ const PhoneScreen = () => {
             />
             <Typography>Choose from 60 Million songs</Typography>
           </Grid>{" "}
-          <br />
-          <br />
-          <br /> <br />
-          <br />
-          <br /> <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
           <Grid>
             <img
               src={VerifiedIcon}

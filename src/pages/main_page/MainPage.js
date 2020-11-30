@@ -123,7 +123,7 @@ function MainPage(props) {
               muted
               key={video1}
             >
-              <source src={video1} type="video/mp4" />
+              <source src={video3} type="video/mp4" />
             </video>
           </div>
         </Grid>

@@ -3,7 +3,7 @@ import Explanation from "../components/explanation/Explanation";
 
 const ExplanationPage = () => {
   return (
-    <div style={{ marginTop: 10 }}>
+    <div style={{ marginTop: 5 }}>
       <Explanation />
     </div>
   );

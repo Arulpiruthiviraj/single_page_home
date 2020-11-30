@@ -38,12 +38,12 @@ export default function Explanation() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Typography
-            style={{ fontSize: 50, fontFamily: '"Nerko One", cursive' }}
+            style={{ fontSize: 40, fontFamily: '"Nerko One", cursive' }}
           >
             The Future Of Music Is Here
           </Typography>
           <Typography
-            style={{ fontSize: 40, fontFamily: '"Nerko One", cursive' }}
+            style={{ fontSize: 30, fontFamily: '"Nerko One", cursive' }}
           >
             Social Music Platform
           </Typography>
@@ -120,7 +120,7 @@ export default function Explanation() {
         </Grid>
         <Grid container justify="center" xs={12} style={{ padding: 3 }}>
           {/* <Paper className={classes.paper} variant="outlined" elevation={0}> */}
-          <Grid item xs={2}>
+          <Grid item xs={6} md={2}>
             <img
               src={ShareSocialMediaImage}
               alt="Camera"
@@ -130,7 +130,7 @@ export default function Explanation() {
               }}
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} md={4}>
             <Typography variant="h5" component="h5">
               SHARE Muqo videos to your social media and save videos to your
               phone.
@@ -140,7 +140,7 @@ export default function Explanation() {
         </Grid>
         <Grid container justify="center" xs={12} style={{ padding: 3 }}>
           {/* <Paper className={classes.paper} variant="outlined" elevation={0}> */}
-          <Grid item xs={2}>
+          <Grid item xs={6} md={2}>
             <img
               src={ReferFriendImage}
               alt="Camera"
@@ -150,7 +150,7 @@ export default function Explanation() {
               }}
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} md={4}>
             <Typography variant="h5" component="h5">
               REFER friends, gain rewards and receive virtual concert tickets!
             </Typography>
@@ -159,7 +159,7 @@ export default function Explanation() {
         </Grid>{" "}
         <Grid container justify="center" xs={12} style={{ padding: 3 }}>
           {/* <Paper className={classes.paper} variant="outlined" elevation={0}> */}
-          <Grid item xs={2}>
+          <Grid item xs={6} md={2}>
             <img
               src={RankImage}
               alt="Camera"
@@ -169,7 +169,7 @@ export default function Explanation() {
               }}
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} md={4}>
             <Typography variant="h5" component="h5">
               RANK the top 100 musicians, songs and influencers.
             </Typography>

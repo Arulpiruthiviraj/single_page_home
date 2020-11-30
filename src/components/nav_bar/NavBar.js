@@ -20,7 +20,7 @@ import MailIcon from "@material-ui/icons/Mail";
 import { ReactComponent as MuqoLogo } from "../../assets/images/muqo.svg";
 import { ReactComponent as GooglePlayLogo } from "../../assets/images/google-play-badge.svg";
 import { ReactComponent as AppStoreLogo } from "../../assets/images/app-store-badge.svg";
-
+import { FcHome, FcAbout, FcGoodDecision, FcContacts } from "react-icons/fc";
 import SvgIcon from "@material-ui/core/Icon";
 
 const drawerWidth = 240;
@@ -161,7 +161,10 @@ export default function NavBar() {
           {["Home", "About", "MuqoForGood", "Contact"].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {index === 0 ? <FcHome /> : null}
+                {index === 1 ? <FcAbout /> : null}
+                {index === 2 ? <FcGoodDecision /> : null}
+                {index === 3 ? <FcContacts /> : null}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
